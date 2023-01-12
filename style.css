@@ -21,6 +21,7 @@ body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
+    background:linear-gradient(to bottom, rgb(255, 255, 255), rgb(219, 172, 255)) ;
 }
 
 body::before {
@@ -377,17 +378,27 @@ section {
 /* Responsivo */
 
 @media screen and (max-width:768px){
+
     header {
         display: none;
     }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
+    }
+
     .card {
+        border-radius: none;
         height: 100vh;
         width: 100vw;
     }
 
     .registro {
-        height: 600px;
-        width: 400px;
+        border-radius: none;
+        height: 100vh;
+        width: 100%;
     }
 
     .termos {
@@ -396,10 +407,10 @@ section {
     }
 
     .modal-error {
-        left: 27%;
+        left: 17%;
     }
 
     .login-validated {
-        left: 35%;
+        left: 33%;
     }
 }
